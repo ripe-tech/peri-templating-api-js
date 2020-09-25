@@ -25,7 +25,7 @@ export default [
     {
         input: "js/index.js",
         output: {
-            name: "ripeCommunicationsRendering",
+            name: "ripeTemplating",
             file: pkg.browser,
             banner: banner,
             format: "umd",

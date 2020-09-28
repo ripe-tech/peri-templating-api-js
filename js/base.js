@@ -1,9 +1,10 @@
 import { API as BaseAPI, mix, load, conf } from "yonius";
 import { OrderAPI } from "./order";
+import { ReviewAPI } from "./review";
 
 const TEMPLATING_SERVICE_URL = "http://localhost:3000/";
 
-export class API extends mix(BaseAPI).with(OrderAPI) {
+export class API extends mix(BaseAPI).with(OrderAPI, ReviewAPI) {
     constructor(kwargs = {}) {
         super(kwargs);
         this.baseUrl = conf("TEMPLATING_SERVICE_URL", TEMPLATING_SERVICE_URL);

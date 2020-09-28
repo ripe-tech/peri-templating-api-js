@@ -1,7 +1,6 @@
 import { OrderAPI } from "./order";
-import { ReviewAPI } from "./review";
 
-export interface API extends OrderAPI, ReviewAPI {}
+export interface API extends OrderAPI {}
 
 export declare class API implements API {
     constructor(kwargs?: object);

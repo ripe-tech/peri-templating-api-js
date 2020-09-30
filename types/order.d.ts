@@ -1,3 +1,3 @@
 export declare class OrderAPI {
-    getOrderTemplate(event: Object): Blob;
+    getOrder(event: Object): String;
 }

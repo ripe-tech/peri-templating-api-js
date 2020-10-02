@@ -1,11 +1,10 @@
 export const OrderAPI = superclass =>
     class extends superclass {
-        async getOrderTemplate(event) {
+        async getOrder(event) {
             const url = this.baseUrl + "order";
-            const contents = await this.post(url, {
+            return await this.post(url, {
                 dataJ: event
             });
-            return await contents.text();
         }
     };
 

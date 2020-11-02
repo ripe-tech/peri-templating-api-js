@@ -1,10 +1,8 @@
 import { API as BaseAPI, mix, load, conf } from "yonius";
-import { OrderAPI } from "./order";
-import { ReviewAPI } from "./review";
 
 const BASE_URL = "https://peri-templating-now.platforme.com/";
 
-export class API extends mix(BaseAPI).with(OrderAPI, ReviewAPI) {
+export class API extends BaseAPI {
     constructor(kwargs = {}) {
         super(kwargs);
         this.baseUrl = conf("PERI_TEMPLATING_BASE_URL", BASE_URL);
@@ -28,7 +26,12 @@ export class API extends mix(BaseAPI).with(OrderAPI, ReviewAPI) {
         }
     }
 
-    async info() {}
+    async render(template, payload) {
+        const url = this.baseUrl + template;
+        return await this.post(url, {
+            dataJ: payload
+        });
+    }
 }
 
 export default API;

@@ -1,4 +1,4 @@
-import { API as BaseAPI, mix, load, conf } from "yonius";
+import { API as BaseAPI, load, conf } from "yonius";
 
 const BASE_URL = "https://peri-templating-now.platforme.com/";
 

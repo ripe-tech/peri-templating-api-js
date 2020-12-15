@@ -5,8 +5,8 @@ const BASE_URL = "https://peri-templating-now.platforme.com/";
 export class API extends BaseAPI {
     constructor(kwargs = {}) {
         super(kwargs);
-        this.baseUrl = conf("PERI_TEMPLATING_BASE_URL", BASE_URL);
-        this.token = conf("PERI_TEMPLATING_TOKEN", null);
+        this.baseUrl = conf("TEMPLATING_SERVICE_URL", BASE_URL);
+        this.token = conf("TEMPLATING_SERVICE_TOKEN", null);
         this.baseUrl = kwargs.baseUrl === undefined ? this.baseUrl : kwargs.baseUrl;
         this.token = kwargs.token === undefined ? this.token : kwargs.token;
     }

@@ -1,6 +1,6 @@
 import { API as BaseAPI, load, conf } from "yonius";
 
-const BASE_URL = "https://peri-templating-now.platforme.com/";
+const BASE_URL = "http://localhost:3000/";
 
 export class API extends BaseAPI {
     constructor(kwargs = {}) {

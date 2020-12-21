@@ -18,3 +18,9 @@ The initialization can be done by providing an `options` object such as:
     token: "sd1029bfwef9adas+0feqefi"
 }
 ```
+
+## Configuration
+
+| Name                         | Type  | Mandatory | Default                  | Description                    |
+| ---------------------------- | ----- | --------- | ------------------------ | ------------------------------ |
+| **PERI_TEMPLATING_BASE_URL** | `str` | false     | `http://localhost:3000/` | URL of the templating service. |

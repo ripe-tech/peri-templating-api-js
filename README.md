@@ -21,8 +21,7 @@ The initialization can be done by providing an `options` object such as:
 
 ## Configuration
 
-| Name                         | Type  | Default                  | Description                                                      |
-| ---------------------------- | ----- | ------------------------ | ---------------------------------------------------------------- |
-| **PERI_TEMPLATING_BASE_URL** | `str` | `http://localhost:3000/` | URL of the templating service.                                   |
-| **PERI_TEMPLATING_TOKEN**    | `str` | `null`                   | Authentication token to communicate with the templating service. |
- 
+| Name                         | Type  | Default                  | Description                                                               |
+| ---------------------------- | ----- | ------------------------ | ------------------------------------------------------------------------- |
+| **PERI_TEMPLATING_BASE_URL** | `str` | `http://localhost:3000/` | The base URL of the PERI Templating service, to be used by the API client |
+| **PERI_TEMPLATING_TOKEN**    | `str` | `None`                   | Authentication token to communicate with the PERI Templating service.     |

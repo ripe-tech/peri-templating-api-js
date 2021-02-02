@@ -1,5 +1,5 @@
 {
-    "name": "peri-templating-api-js",
+    "name": "peri-templating-api",
     "version": "0.1.0",
     "description": "The PERI Templating API client",
     "keywords": [
@@ -22,10 +22,10 @@
         "name": "Platforme",
         "url": "https://www.platforme.com"
     },
-    "main": "dist/peri-templating-api-js.cjs.js",
-    "unpkg": "dist/peri-templating-api-js.umd.js",
-    "module": "dist/peri-templating-api-js.esm.js",
-    "browser": "dist/peri-templating-api-js.umd.js",
+    "main": "dist/peri-templating-api.cjs.js",
+    "unpkg": "dist/peri-templating-api.umd.js",
+    "module": "dist/peri-templating-api.esm.js",
+    "browser": "dist/peri-templating-api.umd.js",
     "types": "types/index.d.ts",
     "typings": "types/index.d.ts",
     "files": [

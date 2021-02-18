@@ -1,8 +1,3 @@
-import { OrderAPI } from "./order";
-import { ReviewAPI } from "./review";
-
-export interface API extends OrderAPI, ReviewAPI {}
-
 export type BuildOptions = {
     headers?: Record<string, unknown>;
     kwargs?: Record<string, unknown>;

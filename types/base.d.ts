@@ -1,10 +1,8 @@
-import { OrderAPI } from "./order";
-import { ReviewAPI } from "./review";
+import { API as BaseAPI } from "yonius";
 
-export interface API extends OrderAPI, ReviewAPI {}
-
-export declare class API implements API {
+export declare class API extends BaseAPI {
     constructor(kwargs?: object);
     load(): Promise<void>;
+    render(template: string, payload: JSON);
     info(): Promise<object>;
 }

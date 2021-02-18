@@ -25,6 +25,7 @@ export enum BuildMethod {
 export declare class API implements API {
     constructor(kwargs?: object);
     load(): Promise<void>;
-    build(method: BuildMethod, url: string, options?: BuildOptions)
+    build(method: BuildMethod, url: string, options?: BuildOptions);
+    render(template: string, payload: JSON);
     info(): Promise<object>;
 }

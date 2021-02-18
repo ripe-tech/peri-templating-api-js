@@ -1,3 +1,5 @@
+import { API as BaseAPI } from "yonius";
+
 export type BuildOptions = {
     headers?: Record<string, unknown>;
     kwargs?: Record<string, unknown>;
@@ -17,10 +19,10 @@ export enum BuildMethod {
     OPTIONS = "OPTIONS"
 }
 
-export declare class API implements API {
+
+export declare class API extends BaseAPI {
     constructor(kwargs?: object);
     load(): Promise<void>;
-    build(method: BuildMethod, url: string, options?: BuildOptions);
     render(template: string, payload: JSON);
     info(): Promise<object>;
 }
